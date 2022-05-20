@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    @charset "UTF-8";
+
+    body {
+        @apply bg-white font-montserrat w-full;
+    }
+
+    body.interna {
+        @apply bg-white;
+    }
+
+    .bpvisor {
+        @apply fixed bottom-0 w-8 h-8 left-0 z-50 bg-gray-400 sm:bg-yellow-400 md:bg-red-600 lg:bg-blue-500 xl:bg-green-400 2xl:bg-gray-800 text-center;
+        p {
+            @apply font-bold text-lg;
+            &::before {
+                content: "xs";
+            }
+        }
+        @media (min-width: 640px) {
+            p::before {
+                content: "sm";
+            }
+        }
+        @media (min-width: 768px) {
+            p::before {
+                content: "md";
+            }
+        }
+        @media (min-width: 1024px) {
+            p::before {
+                content: "lg";
+            }
+        }
+        @media (min-width: 1280px) {
+            p::before {
+                content: "xl";
+            }
+        }
+        @media (min-width: 1536px) {
+            p::before {
+                content: "2xl";
+            }
+        }
+    }
+
+    section {
+        @apply relative w-full;
+    }
+
+    header {
+        /* .topNav {
+            @apply fixed w-full z-20;
+
+            .navHolder {
+                @apply relative container mx-auto;
+            }
+
+            nav {
+                @apply relative
+                h-[66px]
+                border-b
+                border-azul-light
+                bg-white
+                mx-auto
+                flex flex-row
+                justify-between
+                items-center;
+                width: calc(100% - (57px * 2));
+
+                &::before {
+                    @apply content-[''] block absolute h-[67px] top-0 w-[57px] bg-auto bg-navLeft left-[-57px];
+                }
+
+                &::after {
+                    @apply content-[''] block absolute h-[67px] top-0 w-[57px] bg-auto bg-navRight right-[-57px];
+                }
+            }
+        } */
+
+        /* secondaryNav */
+        /* .secondaryNav {
+            @apply absolute inset-0 
+            -left-full 
+            bg-azul-light 
+            min-h-[100vh] h-full w-full sm:fixed z-10
+            transition-all duration-500 ease-in-out;
+
+            &__holder {
+                @apply relative 
+                min-h-full sm:h-auto h-full
+                sm:w-full w-9/12 
+                mx-auto sm:mx-0
+                md:bg-secondaryPath bg-no-repeat md:bg-[right_5vw_top_0] lg:bg-[right_20vw_top_0] xl:bg-left-top bg-auto
+                pt-24 sm:pt-28 lg:pl-20 xl:pl-48 
+                overflow-y-auto md:overflow-auto;
+
+                nav {
+                    @apply container flex flex-col sm:flex-row justify-start gap-x-28 min-h-full h-auto;
+                }
+            }
+
+            ul {
+                @apply w-full sm:w-[294px];
+                li {
+                    @apply mb-4 sm:mb-5;
+                    a {
+                        @apply text-azul-light font-lato text-lg md:text-xl block duration-300 transition-all hover:text-white;
+                        span {
+                            @apply block mt-3 ml-6 text-white tracking-wide text-xs;
+                        }
+                    }
+                }
+            }
+        }
+
+        .secondaryNav.is-active {
+            @apply left-0 bg-azul/90;
+        }
+
+        .navbar-burger {
+            @apply relative transition-all duration-300 w-[23px] h-[23px] block z-50;
+        }
+
+        .navbar-burger span {
+            @apply absolute h-[2px] w-full bg-azul block transition-all duration-300;
+        }
+
+        .navbar-burger span:nth-child(2) {
+            top: calc(50% - 2px);
+        }
+        .navbar-burger span:nth-child(3) {
+            top: calc(50% + 8px);
+        }
+        .navbar-burger.is-active span:nth-child(1) {
+            transform: translateY(11px) rotate(45deg);
+            @apply bg-azul;
+        }
+        .navbar-burger.is-active span:nth-child(2) {
+            @apply opacity-0;
+        }
+        .navbar-burger.is-active span:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+            @apply bg-azul;
+        } */
+    }
+
+    
+
+    
+}
