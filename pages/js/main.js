@@ -1,36 +1,35 @@
 (function ($) {
-    $(".navbar-burger").on("click", function (event) {
+    $(".navbar-burger, .closeMenu").on("click", function (event) {
         toggleMenu();
-        console.log("menu");
         event.preventDefault();
     });
     function toggleMenu() {
         $(".navbar-burger").toggleClass("is-active");
-        $(".secondaryNav").toggleClass("is-active");
-        setTimeout(function () {
-            console.log("exibir menu");
-        }, 200);
+        $(".secundario").toggleClass("is-active");
+        // setTimeout(function () {
+        //     console.log("exibir menu");
+        // }, 200);
     }
 
-    $("#backTop, .heroNav ul li a").on(
-        "click",
-        function (event) {
-            console.log('teste');
-            event.preventDefault();
-            var url = $(this).attr("href");
-            console.log('url: ', url);
+    // $("#backTop, .heroNav ul li a").on(
+    //     "click",
+    //     function (event) {
+    //         console.log('teste');
+    //         event.preventDefault();
+    //         var url = $(this).attr("href");
+    //         console.log('url: ', url);
 
-            $("html, body")
-                .stop()
-                .animate(
-                    {
-                        scrollTop: $(url).offset().top,
-                    },
-                    800,
-                    "easeInOutExpo"
-                );
-        }
-    );
+    //         $("html, body")
+    //             .stop()
+    //             .animate(
+    //                 {
+    //                     scrollTop: $(url).offset().top,
+    //                 },
+    //                 800,
+    //                 "easeInOutExpo"
+    //             );
+    //     }
+    // );
 
     var playing = false;
     $(".audio-btn").click(function(e) {

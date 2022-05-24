@@ -2,11 +2,162 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * foco:
+ *   - http://typekit.com/eulas/00000000000000003b9b033a
+ *   - http://typekit.com/eulas/00000000000000003b9b033b
+ *   - http://typekit.com/eulas/00000000000000003b9b033d
+ *   - http://typekit.com/eulas/00000000000000003b9b033c
+ *   - http://typekit.com/eulas/00000000000000003b9b0338
+ *   - http://typekit.com/eulas/00000000000000003b9b0339
+ *   - http://typekit.com/eulas/00000000000000003b9b033f
+ *   - http://typekit.com/eulas/00000000000000003b9b033e
+ *
+ * © 2009-2022 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2022-05-18 21:37:13 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=abu4njb&ht=tk&f=9795.9796.9797.9798.9799.9800.9801.9802&a=99112701&app=typekit&e=css");
+
+@font-face {
+    font-family: "Museo100";
+    src: url("./fonts/3b12f78c783e678acc1f0fefe8e46380.eot"); /* IE9*/
+    src: url("./fonts/3b12f78c783e678acc1f0fefe8e46380.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */ url("./fonts/3b12f78c783e678acc1f0fefe8e46380.woff2")
+            format("woff2"),
+        /* chrome、firefox */
+            url("./fonts/3b12f78c783e678acc1f0fefe8e46380.woff") format("woff"),
+        /* chrome、firefox */
+            url("./fonts/3b12f78c783e678acc1f0fefe8e46380.ttf")
+            format("truetype"),
+        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url("./fonts/3b12f78c783e678acc1f0fefe8e46380.svg#Museo Sans 100 Regular")
+            format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: "foco";
+    src: url("https://use.typekit.net/af/6106bc/00000000000000003b9b033a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+            format("woff2"),
+        url("https://use.typekit.net/af/6106bc/00000000000000003b9b033a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+            format("woff"),
+        url("https://use.typekit.net/af/6106bc/00000000000000003b9b033a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+            format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "foco";
+    src: url("https://use.typekit.net/af/d5b36a/00000000000000003b9b033b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+            format("woff2"),
+        url("https://use.typekit.net/af/d5b36a/00000000000000003b9b033b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+            format("woff"),
+        url("https://use.typekit.net/af/d5b36a/00000000000000003b9b033b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+            format("opentype");
+    font-display: auto;
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "foco-700";
+    src: url("https://use.typekit.net/af/09a46f/00000000000000003b9b033d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+            format("woff2"),
+        url("https://use.typekit.net/af/09a46f/00000000000000003b9b033d/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+            format("woff"),
+        url("https://use.typekit.net/af/09a46f/00000000000000003b9b033d/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+            format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "foco-700";
+    src: url("https://use.typekit.net/af/3bde18/00000000000000003b9b033c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3")
+            format("woff2"),
+        url("https://use.typekit.net/af/3bde18/00000000000000003b9b033c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3")
+            format("woff"),
+        url("https://use.typekit.net/af/3bde18/00000000000000003b9b033c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3")
+            format("opentype");
+    font-display: auto;
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "foco-300";
+    src: url("https://use.typekit.net/af/69890d/00000000000000003b9b0338/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+            format("woff2"),
+        url("https://use.typekit.net/af/69890d/00000000000000003b9b0338/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+            format("woff"),
+        url("https://use.typekit.net/af/69890d/00000000000000003b9b0338/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+            format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "foco-300";
+    src: url("https://use.typekit.net/af/7b8eae/00000000000000003b9b0339/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3")
+            format("woff2"),
+        url("https://use.typekit.net/af/7b8eae/00000000000000003b9b0339/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3")
+            format("woff"),
+        url("https://use.typekit.net/af/7b8eae/00000000000000003b9b0339/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3")
+            format("opentype");
+    font-display: auto;
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "foco-900";
+    src: url("https://use.typekit.net/af/05b406/00000000000000003b9b033f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+            format("woff2"),
+        url("https://use.typekit.net/af/05b406/00000000000000003b9b033f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+            format("woff"),
+        url("https://use.typekit.net/af/05b406/00000000000000003b9b033f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+            format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 900;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "foco-900";
+    src: url("https://use.typekit.net/af/0cf3ef/00000000000000003b9b033e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3")
+            format("woff2"),
+        url("https://use.typekit.net/af/0cf3ef/00000000000000003b9b033e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3")
+            format("woff"),
+        url("https://use.typekit.net/af/0cf3ef/00000000000000003b9b033e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3")
+            format("opentype");
+    font-display: auto;
+    font-style: italic;
+    font-weight: 900;
+    font-stretch: normal;
+}
+
 @layer components {
     @charset "UTF-8";
 
     body {
-        @apply bg-white font-montserrat w-full;
+        @apply bg-white font-foco w-full;
     }
 
     body.interna {
@@ -53,103 +204,127 @@
     }
 
     header {
-        /* .topNav {
-            @apply fixed w-full z-20;
-
-            .navHolder {
-                @apply relative container mx-auto;
-            }
-
-            nav {
-                @apply relative
-                h-[66px]
-                border-b
-                border-azul-light
-                bg-white
-                mx-auto
-                flex flex-row
-                justify-between
-                items-center;
-                width: calc(100% - (57px * 2));
-
-                &::before {
-                    @apply content-[''] block absolute h-[67px] top-0 w-[57px] bg-auto bg-navLeft left-[-57px];
-                }
-
-                &::after {
-                    @apply content-[''] block absolute h-[67px] top-0 w-[57px] bg-auto bg-navRight right-[-57px];
-                }
-            }
-        } */
-
-        /* secondaryNav */
-        /* .secondaryNav {
-            @apply absolute inset-0 
-            -left-full 
-            bg-azul-light 
-            min-h-[100vh] h-full w-full sm:fixed z-10
-            transition-all duration-500 ease-in-out;
-
-            &__holder {
-                @apply relative 
-                min-h-full sm:h-auto h-full
-                sm:w-full w-9/12 
-                mx-auto sm:mx-0
-                md:bg-secondaryPath bg-no-repeat md:bg-[right_5vw_top_0] lg:bg-[right_20vw_top_0] xl:bg-left-top bg-auto
-                pt-24 sm:pt-28 lg:pl-20 xl:pl-48 
-                overflow-y-auto md:overflow-auto;
-
-                nav {
-                    @apply container flex flex-col sm:flex-row justify-start gap-x-28 min-h-full h-auto;
-                }
-            }
-
-            ul {
-                @apply w-full sm:w-[294px];
-                li {
-                    @apply mb-4 sm:mb-5;
-                    a {
-                        @apply text-azul-light font-lato text-lg md:text-xl block duration-300 transition-all hover:text-white;
-                        span {
-                            @apply block mt-3 ml-6 text-white tracking-wide text-xs;
-                        }
-                    }
-                }
-            }
+        .header__hambcont {
+            transition: 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            /* @apply; */
         }
-
-        .secondaryNav.is-active {
-            @apply left-0 bg-azul/90;
+        .header__hambcont.mobile-active {
+            @apply translate-x-4;
         }
 
         .navbar-burger {
-            @apply relative transition-all duration-300 w-[23px] h-[23px] block z-50;
+            @apply relative transition-all duration-300 w-6 lg:w-[33px] h-[21px] block z-50;
         }
 
         .navbar-burger span {
-            @apply absolute h-[2px] w-full bg-azul block transition-all duration-300;
+            @apply absolute h-1 w-full bg-white block transition-all duration-300 rounded-lg;
         }
 
         .navbar-burger span:nth-child(2) {
-            top: calc(50% - 2px);
+            top: calc(50% - 1px);
         }
         .navbar-burger span:nth-child(3) {
             top: calc(50% + 8px);
         }
+
         .navbar-burger.is-active span:nth-child(1) {
-            transform: translateY(11px) rotate(45deg);
-            @apply bg-azul;
+            transform: translateY(9px) rotate(45deg);
         }
         .navbar-burger.is-active span:nth-child(2) {
-            @apply opacity-0;
+            opacity: 0;
         }
         .navbar-burger.is-active span:nth-child(3) {
-            transform: translateY(-9px) rotate(-45deg);
-            @apply bg-azul;
-        } */
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        .navTop {
+            ul {
+                li {
+                    @apply text-white uppercase text-base lg:text-lg leading-none flex flex-row items-center;
+
+                    &::after {
+                        content: "";
+                        @apply relative bg-white w-[2px] h-4 block md:mx-3 lg:mx-6 2xl:mx-8;
+                    }
+
+                    &:last-of-type {
+                        &::after {
+                            @apply hidden;
+                        }
+                    }
+
+                    a {
+                        @apply relative font-foco py-0 leading-none;
+                    }
+                }
+            }
+        }
     }
 
-    
+    .secundario {
+        @apply transition-all -translate-y-[360px] duration-300 opacity-0;
 
-    
+        &.is-active {
+            @apply translate-y-0 opacity-100;
+        }
+
+        ul {
+            li {
+                @apply mb-1;
+
+                a {
+                    @apply text-white font-foco300 hover:text-pinklight duration-300 transition-all text-xl;
+                }
+            }
+        }
+
+        ul.extras {
+            li {
+                a {
+                    @apply text-pinklight font-foco700 hover:text-white duration-300 transition-all;
+                }
+            }
+        }
+    }
+
+    .destaques {
+        &__ball {
+            @apply w-20 h-20 lg:w-28 lg:h-28 border-white border rounded-full flex justify-center items-center mb-2 md:mb-5;
+
+            /* img {
+                @apply w-8 lg:w-10;
+            } */
+        }
+
+        h3 {
+            @apply text-3xl xl:text-4xl mb-2 md:mb-8;
+        }
+
+        .big {
+            @apply text-[44px] md:text-[56px] xl:text-[62px] 2xl:text-[80px] font-foco100 leading-none mt-10 xl:mt-14;
+        }
+
+        .medium {
+            @apply text-[32px] md:text-[30px] xl:text-[42px] 2xl:text-[50px] leading-none;
+        }
+        p {
+            @apply font-foco100 text-lg md:text-xl xl:text-[24px] 2xl:text-[28px] leading-[1.5em] pl-0 xl:pl-1;
+        }
+    }
+
+    .premios {
+        p {
+            @apply font-foco100 text-lg md:text-2xl xl:text-[36px] leading-[1.22em];
+        }
+
+        &__item {
+            p {
+                @apply font-foco100 text-lg md:text-[22px] xl:text-[28px] leading-[1.22em] mb-5;
+
+                strong {
+                    @apply font-foco;
+                }
+            }
+        }
+    }
 }

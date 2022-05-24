@@ -2,15 +2,192 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
-        <wc-meta title="Simpar - Relatório Anual de Sustentabilidade - Home"></wc-meta>
+        <wc-meta title="Aché - Relatório Anual de Sustentabilidade - Home"></wc-meta>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css?v=0.0.1" />
     </head>
     <body class="w-full">
-        
-        <wc-header></wc-header>
 
+        <div class="bpvisor"><p></p></div>
+        
+        <!-- <wc-header></wc-header> -->
+        <header class="fixed top-0 left-0 h-[60px] lg:h-[76px] w-full block z-20 backdrop-blur bg-menu">
+            <div class="container relative z-[1] flex items-center justify-between md:justify-start h-full">
+                <div class="header__hambcont relative h-20 w-6 xl:w-[33px] flex items-center justify-center transition-all duration-300 z-40 mr-4 lg:mr-9">
+                    <a role="button" class="navbar-burger relative transition-all duration-300 w-6 lg:w-[32px] h-[21px] block z-50" aria-label="menu">
+                        <span aria-hidden="true" class="transition-all duration-300"></span>
+                        <span aria-hidden="true" class="transition-all duration-300"></span>
+                        <span aria-hidden="true" class="transition-all duration-300"></span>
+                    </a>
+                </div>
+
+                <nav class="navTop hidden md:block">
+                    <ul class="flex justify-start items-center">
+                        <li class="text-white uppercase text-lg font-foco700 ">RELATÓRIO ANUAL ACHÉ</li>
+                        <li><a href="#">PDF VERSÃO PDF</a></li>
+                        <li><a href="#">DEMONSTRAÇÕES FINANCEIRAS PDF</a></li>
+                        <li><a href="#">PT</a></li>
+                        <li><a href="#">EN</a></li>
+                    </ul>
+                </nav>
+
+                <span class="text-white uppercase text-base font-foco700 block md:hidden">RELATÓRIO ANUAL</span>
+
+                <img src="./svgs/logo_ache.svg" class="h-7 block md:hidden" alt="">
+            </div>
+        </header>
+
+        <nav class="secundario fixed z-10 top-[60px] lg:top-[76px] left-0 w-full backdrop-blur-md bg-menusecundario flex flex-col items-center py-6">
+            <ul class="menusecundario m-0 flex flex-col items-center">
+                <li><a href="#">MENSAGEM DA PRESIDÊNCIA</a></li>
+                <li><a href="#">DESTAQUES 2021</a></li>
+                <li><a href="#">ACHÉ</a></li>
+                <li><a href="#">GOVERNANÇA E GESTÃO</a></li>
+                <li><a href="#">DIÁLOGO E RELACIONAMENTO</a></li>
+                <li><a href="#">EXCELÊNCIA NA GESTÃO DE RECURSOS </a></li>
+                <li><a href="#">ANEXOS</a></li>
+            </ul>
+            <ul class="extras flex mt-2 md:hidden flex-col items-center">
+                <li><a href="#" class="text-pinklight">PDF VERSÃO PDF</a></li>
+                <li><a href="#" class="text-pinklight">DEMONSTRAÇÕES FINANCEIRAS PDF</a></li>
+                <li><a href="#" class="text-pinklight">PT</a></li>
+                <li><a href="#" class="text-pinklight">EN</a></li>
+            </ul>
+            <img src="./svgs/closemenu.svg" class="w-7 cursor-pointer mt-3 closeMenu" alt="">
+        </nav>
+        
         <main class="relative">
+            <!-- hero -->
+            <div class="hero relative w-full h-screen min-h-[640px] xl:min-h-[800px] bg-hero bg-[36%_center] md:bg-center bg-[length:auto_100%] md:bg-cover flex flex-col pt-20">
+
+                <div class="container relative z-[2] text-white h-full flex flex-col items-start justify-between py-10 md:py-20">
+                    <div>
+                        <h1 class="text-4xl md:text-[60px] xl:text-[78px] font-foco100 leading-none">Relatório Anual <span class="block text-[88px] xl:text-[110px] leading-none mb-12">2021</span></h1>
+                        <h2 class="font-foco100 text-2xl xl:text-[36px] leading-[1.18em] w-[270px] xl:w-[390px]">Estratégia e excelência na execução geram crescimento e valor </h2> 
+                    </div>
+
+                    <img src="./svgs/logo_ache.svg" class="h-12 md:h-[68px] xl:h-[82px]" alt="">
+                </div>
+
+                <div class="absolute w-full h-full bg-pink1 opacity-50 block md:hidden top-0"></div>
+
+            </div>
+
+            <!-- Mensagem da presidência -->
+            <div class="relative w-full min-h-screen h-auto md:h-screen md:min-h-[640px] xl:min-h-[800px] flex flex-col pt-20bg-white bg-presidencia bg-no-repeat 
+            bg-[90%_bottom] md:bg-bottom 
+            bg-[length:auto_92vw] md:bg-cover ">
+
+                <div class="container relative z-[2] text-pink1 h-full flex flex-col items-start justify-between py-10 md:py-20">
+                    <div class="mb-14 md:mb-0">
+                        <h2 class="text-4xl md:text-[60px] xl:text-[78px] font-foco100 leading-none mb-4 md:mb-12">
+                            Mensagem <span class="hidden md:block"></span>da Presidência
+                        </h2>
+                        <p class="font-foco100 text-lg md:text-2xl xl:text-[36px] leading-[1.18em] w-full md:w-5/12">
+                            O Aché segue comprometido com a evolução dos seus negócios e com a geração de valor para os acionistas, colaboradores, consumidores, profissionais da saúde e parceiros comerciais.
+                        </p> 
+                    </div>
+
+                    <wc-btn_saibmais label="Saiba Mais"></wc-btn_saibmais>
+
+                </div>
+                <img src="./images/curva-presid.png" class="h-[120px] md:h-[280px] absolute top-[65vw] md:bottom-0 md:top-auto left-0" alt="">
+            </div>
+
+
+            <!-- Destaques 2021 -->
+            <div class="relative w-full bg-pink1 text-white bg-[right_50%] md:bg-[right_top] bg-no-repeat bg-curvadestaque2021 bg-[length:auto_10%] lg:bg-[length:auto_30%]">
+                <div class="container py-24 lg:pt-32 lg:pb-20">
+                    <div class="relative w-full flex flex-wrap md:flex-nowrap justify-between items-center mb-10">
+                        <h2 class="text-4xl  md:text-[60px] xl:text-[78px] font-foco100 leading-none mb-4 md:mb-12">
+                            Destaques de 2021
+                        </h2>
+                        <wc-btn_saibmais label="Saiba Mais"></wc-btn_saibmais>
+                    </div>
+
+                    <div class="grid lg:grid-cols-3 gap-20 2xl:gap-28 destaques">
+                        <div>
+                            <div class="destaques__ball">
+                                <img src="./svgs/ico-governanca.svg" class="w-8 lg:w-10" alt="">
+                            </div>
+                            <h3>Governança</h3>
+
+                            <div class="big"><span class="medium">R$</span> 4,0 Bi</div>
+                            <p>Receita líquida com crescimento de 15,8% em relação a 2020 </p>
+
+                            <div class="big"><span class="italic">Rating AAA</span></div>
+                            <p>Receita líquida com crescimento de 15,8% em relação a 2020 </p>
+                        </div>
+
+                        <div>
+                            <div class="destaques__ball">
+                                <img src="./svgs/ico-meioambiente.svg" class="w-8 lg:w-10" alt="">
+                            </div>
+                            <h3>Meio ambiente</h3>
+
+                            <div class="big">4,5 <span class="medium">hectares</span></div>
+                            <p>de Reflorestamento (45 mil m2) em Suape (PE)</p>
+
+                            <div class="big">223 <span class="medium">milhões</span></div>
+                            <p>de cartuchos e 304 M de bulas provenientes de  madeira de reflorestamento</p>
+                        </div>
+
+                        <div>
+                            <div class="destaques__ball">
+                                <img src="./svgs/ico-social.svg" class="w-10 lg:w-14" alt="">
+                            </div>
+                            <h3>Social</h3>
+
+                            <div class="big"><span class="medium">R$</span> 13,3 <span class="medium">milhões</span></div>
+                            <p>investidos em projetos voltados às comunidades e profissionais de saúde</p>
+
+                            <div class="big">396 mil</div>
+                            <p>horas de treinamento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premios e reconhecimentos -->
+            <div class="relative w-full bg-cinza premios">
+                <div class="container py-24 lg:pt-32 lg:pb-20 text-pink1">
+                    <div class="flex flex-wrap md:flex-nowrap">
+                        <div class="w-full md:w-6/12 relative z-[1]">
+                            <h2 class="text-4xl  md:text-[60px] xl:text-[78px] font-foco100 leading-none mb-4 md:mb-12 ">
+                                Premios e reconhecimentos
+                            </h2>
+                            <p>
+                                Os prêmios recebidos no ano demonstram que a implementação das iniciativas estratégicas é reconhecida e legitimada pelo mercado.
+                            </p> 
+                        </div>
+                        <div class="w-full md:w-6/12">
+                            <img src="./images/premios.jpg" class="max-h-full mt-8 md:mt-36 lg:mt-0 xl:mt-20 2xl:mt-0" alt="">
+                        </div>
+                    </div>
+
+                    <div class="grid lg:grid-cols-12 gap-20 2xl:gap-28 mt-16">
+                        <div class="premios__item lg:col-span-4">
+                            <p><strong>Liderança no Receituário e Excelência na Execução</strong></p>
+                            <p>
+                                ESTADÃO EMPRESAS MAIS<br>
+                                1º lugar no setor “Farmacêutico”
+                            </p> 
+                        </div>
+
+                        <div class="premios__item lg:col-span-8 xl:col-span-7 2xl:col-span-5">
+                            <p><strong>Preferência dos Clientes</strong></p>
+                            <p>
+                                LUPA DE OURO 2021 PELO SINDUSFARMA<br>
+                                Três Lupas de Ouro + 8 Lupas (top 5).
+                            </p>
+                            <p>
+                                PRÊMIO CONSUMIDOR MODERNO<br>
+                                1º lugar na Indústria Farmacêutica com Excelência em Serviços ao Cliente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </main>
 
@@ -22,6 +199,6 @@
     <script src="./wc-meta.js"></script>
     <script src="./wc-header.js"></script>
     <script src="./wc-footer.js"></script>
-    <script src="./wc-btnghost.js"></script>
+    <script src="./wc-btnsaibamais.js"></script>
     <script src="./js/main.js" type="text/javascript"></script>
 </html>
