@@ -7,7 +7,7 @@ module.exports = {
                 sm: "640px",
                 md: "768px",
                 lg: "1024px",
-                xl: '1120px',
+                xl: '1280px',
                 '2-xl': '1536px',
             },
             padding: {
@@ -24,10 +24,12 @@ module.exports = {
                 pink1: "#C11060",
                 pinklight: "#EB7B99",
                 paragraph: "#4A4949",
-                cinza: "#ececee",
+                cinza: "#ECECEE",
+                cinza2: "#E8E5E5",
                 itemsrodape: "#626161",
                 menu: "rgba(0,0,0,0.3)",
                 menusecundario: "rgba(83,83,83,0.6)"
+
             },
             fontFamily: {
                 montserrat: ["Montserrat"],
@@ -38,17 +40,22 @@ module.exports = {
                 foco900: ["foco-900"],
             },
             aspectRatio: {
-                
+                boxhome: "80/101",
             },
             backgroundImage: {
                 hero: "url('../backgrounds/hero.jpg')",
                 presidencia: "url('../backgrounds/presidencia.jpg')",
+                ache: "url('../backgrounds/ache.jpg')",
                 curvadestaque2021: "url('../images/curva-destaques2021.png')",
+                boxache: "url('../images/boxache.jpg')",
             },
             backgroundPosition: {
                 centerTop: 'center top',
                 centerBottom: 'center bottom',
                 heroPathxs: 'left -150px top 0',
+            },
+            paddingLeft: {
+                sidebar: '1rem',
             },
             backgroundSize: {
             }
