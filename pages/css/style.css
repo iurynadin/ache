@@ -1076,11 +1076,6 @@ header .navTop ul li a {
   .default__content--sidebar section {
     width: 230px;
   }
-
-  .default__content--sidebar section {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
 }
 @media (min-width: 1024px) {
 
@@ -1206,7 +1201,7 @@ header .navTop ul li a {
 @media (min-width: 1536px) {
 
   .default__content--container section {
-    width: 1040px;
+    width: 1010px;
   }
 }
 .default__content--container section > p {
@@ -1253,6 +1248,31 @@ header .navTop ul li a {
 
   .default__content--container h2 {
     font-size: 48px;
+  }
+}
+.default__content--container h3 {
+  margin-bottom: 1rem;
+  font-family: Museo100;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(193 16 96 / var(--tw-text-opacity));
+}
+@media (min-width: 1024px) {
+
+  .default__content--container h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  .default__content--container h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+@media (min-width: 1280px) {
+
+  .default__content--container h3 {
+    font-size: 38px;
   }
 }
 .default__content--container b, .default__content--container strong {
@@ -1684,6 +1704,9 @@ footer ul li a:hover {
 }
 .bg-ache {
   background-image: url('../backgrounds/ache.jpg');
+}
+.bg-governanca {
+  background-image: url('../backgrounds/governanca.jpg');
 }
 .bg-hero {
   background-image: url('../backgrounds/hero.jpg');

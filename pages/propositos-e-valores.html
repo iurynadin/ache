@@ -14,16 +14,14 @@
         
         <main class="relative default">
             <!-- heroIntern -->
-            <div class="default__hero bg-ache">
-                <div class="container">
-                    <p>A sustentabilidade econômica, social e ambiental embasa nossas decisões de gestão e nos conduz a um crescimento consistente e a uma presença duradoura.</p>
-                    <h1>Aché</h1>
-                </div>
-                <div class="default__hero--cover"></div>
-            </div>
+            <wc-hero
+                background="bg-ache"
+                title="Aché"  
+                description="A sustentabilidade econômica, social e ambiental embasa nossas decisões de gestão e nos conduz a um crescimento consistente e a uma presença duradoura."  
+            ></wc-hero>
+
 
             <div class="default__content">
-                <!-- <div class="absolute container border border-red-500 h-4 bg-green-500 left-[50%] -translate-x-1/2"></div> -->
 
                 <div class="default__content--sidebar">
                     <section>
@@ -54,7 +52,7 @@
                             E nossa missão é levar mais vida para você.
                         </p>
 
-                        <h3 class="text-pink1 font-foco100 text-2xl lg:text-3xl xl:text-[38px] mb-4 lg:mb-6">Nossos Valores</h3>
+                        <h3>Nossos Valores</h3>
 
                         <div class="grid md:grid-cols-2 gap-x-8">
                             <div>
@@ -164,13 +162,11 @@
                                 </p>
                             </div>
                         </div>
-
-
                     </section>
+
                 </div>
             </div>
         </main>
-
 
         <wc-footer></wc-footer>
 
@@ -181,6 +177,7 @@
     <script src="./wc-header.js"></script>
     <script src="./wc-footer.js"></script>
     <script src="./wc-btnsaibamais.js"></script>
+    <script src="./wc-hero.js"></script>
     <script src="./wc-menu-ache.js"></script>
     <script src="./js/main.js" type="text/javascript"></script>
 </html>

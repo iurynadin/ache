@@ -46,6 +46,7 @@ module.exports = {
                 hero: "url('../backgrounds/hero.jpg')",
                 presidencia: "url('../backgrounds/presidencia.jpg')",
                 ache: "url('../backgrounds/ache.jpg')",
+                governanca: "url('../backgrounds/governanca.jpg')",
                 curvadestaque2021: "url('../images/curva-destaques2021.png')",
                 boxache: "url('../images/boxache.jpg')",
             },
