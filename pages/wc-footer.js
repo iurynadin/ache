@@ -24,15 +24,15 @@ class FooterElement extends HTMLElement {
                             </ul>
 
                             <ul>
-                                <li><a href="#">Aché</a></li>
-                                <li><a href="#">Propósito e Valores</a></li>
-                                <li><a href="#">Perfil</a></li>
+                                <li><strong>Aché</strong></li>
+                                <li><a href="./propositos-e-valores.html">Propósito e Valores</a></li>
+                                <li><a href="./perfil.html">Perfil</a></li>
                                 <li><a href="#">Planejamento estratégico</a></li>
                             </ul>
 
                             <ul>
-                                <li><a href="#">Governança e gestão</a></li>
-                                <li><a href="#">Estrutura de governança</a></li>
+                                <li><strong>Governança e gestão</strong></li>
+                                <li><a href="./estrutura-de-governanca.html">Estrutura de governança</a></li>
                                 <li><a href="#">Compliance e gestão de riscos</a></li>
                                 <li><a href="#">Inovação</a></li>
                                 <li><a href="#">Desempenho setorial e do negócio</a></li>
@@ -41,7 +41,7 @@ class FooterElement extends HTMLElement {
 
                         <div>
                             <ul>
-                                <li><a href="#">Diálogo e relacionamento</a></li>
+                                <li><strong>Diálogo e relacionamento</strong></li>
                                 <li><a href="#">Geração Aché</a></li>
                                 <li><a href="#">Médicos</a></li>
                                 <li><a href="#">Consumidores</a></li>
@@ -52,7 +52,7 @@ class FooterElement extends HTMLElement {
                             </ul>
 
                             <ul>
-                                <li><a href="#">Excelência na gestão de recursos </a></li>
+                                <li>Excelência na gestão de recursos</li>
                                 <li><a href="#">Eficiência operacional</a></li>
                                 <li><a href="#">Compromisso com o meio ambiente</a></li>
                             </ul>
@@ -60,7 +60,7 @@ class FooterElement extends HTMLElement {
 
                         <div class="relative">
                             <ul>
-                                <li><a href="#">Anexos</a></li>
+                                <li><strong>Anexos</strong></li>
                                 <li><a href="#">Sobre o relatório</a></li>
                                 <li><a href="#">Indicadores Ethos</a></li>
                                 <li><a href="#">Temas materiais</a></li>
@@ -70,7 +70,9 @@ class FooterElement extends HTMLElement {
                                 <li><a href="#">Créditos</a></li>
                             </ul>
 
-                            <img src="./svgs/logo_ache_pink.svg" class="h-10 relative mt-6 md:mt-0 md:absolute md:left-0 md:bottom-4" alt="">
+                            <a href="./index.html">
+                                <img src="./svgs/logo_ache_pink.svg" class="h-10 relative mt-6 md:mt-0 md:absolute md:left-0 md:bottom-4" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>

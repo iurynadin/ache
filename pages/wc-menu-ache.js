@@ -5,9 +5,9 @@ class MenuAcheElement extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <ul>
-                <li><a href="propositos-e-valores.html">Propósitos e Valores</a></li>
-                <li><a href="perfil.html">Perfil</a></li>
-                <li><a href="planejamento-estratégivo">Planejamento estratégico</a></li>
+                <li><a href="./propositos-e-valores.html">Propósitos e Valores</a></li>
+                <li><a href="./perfil.html">Perfil</a></li>
+                <li><a href="./planejamento-estrategico.html">Planejamento estratégico</a></li>
             </ul>
         `;
     }

@@ -164,6 +164,15 @@
         @apply bg-white;
     }
 
+    .full-width {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+
     .bpvisor {
         @apply fixed bottom-0 w-8 h-8 left-0 z-50 bg-gray-400 sm:bg-yellow-400 md:bg-red-600 lg:bg-blue-500 xl:bg-green-400 2xl:bg-gray-800 text-center;
         p {
@@ -296,6 +305,14 @@
             } */
         }
 
+        &__ball2 {
+            @apply w-20 h-20 lg:w-24 lg:h-24 border-white border rounded-full flex justify-center items-center mb-2 md:mb-5;
+
+            /* img {
+                @apply w-8 lg:w-10;
+            } */
+        }
+
         h3 {
             @apply text-3xl xl:text-4xl mb-2 md:mb-8;
         }
@@ -309,6 +326,18 @@
         }
         p {
             @apply font-foco100 text-lg md:text-xl xl:text-[24px] 2xl:text-[28px] leading-[1.5em] pl-0 xl:pl-1;
+        }
+    }
+
+    .destaquesInterna {
+        p,
+        .big {
+            color: #ffffff !important;
+        }
+
+        .big {
+            @apply text-[44px] md:text-[56px] xl:text-[62px] 2xl:text-[80px] font-foco100 leading-none;
+            margin-top: 10px !important;
         }
     }
 
@@ -341,14 +370,14 @@
             }
 
             .container {
-                @apply relative z-[2] text-white h-full flex flex-col items-start justify-between pt-2 md:pt-6 pb-7 lg:py-10;
+                @apply relative z-[2] h-full flex flex-col items-start justify-between pt-2 md:pt-6 pb-7 lg:py-10;
 
                 h1 {
-                    @apply text-4xl md:text-[56px] lg:text-[66px] xl:text-[78px] 2xl:text-[82px] font-foco100 leading-none md:leading-[0.8em] mt-8 md:mt-0;
+                    @apply text-4xl md:text-[56px] lg:text-[66px] xl:text-[78px] 2xl:text-[82px] font-foco100 leading-none md:leading-[0.8em] xl:leading-[1.06em] mt-8 md:mt-0;
                 }
 
                 p {
-                    @apply text-[17px] lg:text-[20px] xl:text-[26px] leading-tight font-foco100 md:w-[38%] xl:w-[38%] 2xl:w-[32%];
+                    @apply text-[17px] text-white lg:text-[20px] xl:text-[26px] leading-tight font-foco100 md:w-[38%] xl:w-[38%] 2xl:w-[32%];
                 }
             }
         }
@@ -356,32 +385,17 @@
         &__content {
             @apply relative w-full flex flex-col md:flex-row;
 
-            &--sidebar {
-                @apply md:w-4/12 xl:w-4/12 bg-gradient-to-l from-[#EBECEC] to-[#ffffff] flex flex-col items-end;
+            &--fullpage {
+                @apply py-4 lg:py-10;
 
-                section {
-                    @apply md:w-[230px] lg:w-[330px] xl:w-[390px] 2xl:w-[490px] py-4 lg:pt-10 px-4;
+                > p,
+                .grid p {
+                    @apply text-lg lg:text-[22px] text-paragraph font-foco300 leading-tight mb-5 md:mb-10;
                 }
 
-                ul {
-                    li {
-                        @apply mb-2 lg:mb-6 font-foco text-[20px] pb-2 md:pb-2 lg:text-[24px] xl:text-[30px] leading-tight border-b-[1px] md:border-b-0 border-pink1;
-
-                        a {
-                            @apply text-pink1 hover:text-pinklight duration-300 transition-all;
-                        }
-                    }
-                }
-            }
-
-            &--container {
-                @apply md:w-8/12 xl:w-8/12 bg-white pt-10;
-
-                section {
-                    @apply md:w-[500px] lg:w-[650px] xl:w-[840px] 2xl:w-[1010px] px-4 md:px-6 lg:pl-10 lg:pr-0;
-
-                    > p {
-                        @apply text-lg lg:text-[22px] text-paragraph font-foco300 leading-tight mb-5 md:mb-10;
+                .pinkfeatured {
+                    p {
+                        @apply text-lg lg:text-[26px] text-pink1 font-foco300 leading-tight mb-5 md:mb-10;
                     }
                 }
 
@@ -402,7 +416,134 @@
                     @apply h-px w-full bg-pink1 border-none my-2;
                 }
             }
+
+            &--sidebar {
+                @apply md:w-4/12 xl:w-4/12 bg-gradient-to-l from-[#EBECEC] to-[#ffffff] flex flex-col items-end;
+
+                section {
+                    @apply md:w-[230px] lg:w-[330px] xl:w-[390px] 2xl:w-[490px] py-4 lg:pt-10 px-4;
+                }
+
+                ul {
+                    li {
+                        @apply mb-2 lg:mb-6 font-foco text-[20px] pb-2 md:pb-2 lg:text-[24px] xl:text-[30px] leading-tight border-b-[1px] md:border-b-0 border-pink1;
+
+                        a {
+                            @apply text-pink1 hover:text-pinklight duration-300 transition-all;
+                        }
+                    }
+                }
+            }
+
+            &--container {
+                @apply md:w-8/12 xl:w-8/12 bg-white pt-10
+                overflow-x-hidden;
+
+                section {
+                    @apply md:w-[500px] lg:w-[650px] xl:w-[840px] 2xl:w-[1010px] px-4 md:px-6 lg:pl-10 lg:pr-0;
+
+                    > p,
+                    > .grid p {
+                        @apply text-lg lg:text-[22px] text-paragraph font-foco300 leading-tight mb-5 md:mb-10;
+                    }
+
+                    .pinkfeatured {
+                        p {
+                            @apply text-lg lg:text-[26px] text-pink1 font-foco300 leading-tight mb-5 md:mb-10;
+                        }
+                    }
+                }
+
+                h2 {
+                    @apply text-pink1 font-foco100 text-3xl lg:text-4xl xl:text-[48px] mb-4 lg:mb-10;
+                }
+
+                h3 {
+                    @apply text-pink1 font-foco100 text-2xl lg:text-3xl xl:text-[38px] mb-4 lg:mb-6;
+                }
+
+                h4 {
+                    @apply text-pink1 font-foco700 text-xl lg:text-2xl mb-4 lg:mb-6;
+                }
+
+                h5 {
+                    @apply text-pink1 font-foco100 text-[21px] mb-4 lg:mb-6;
+                }
+
+                b,
+                strong {
+                    @apply font-foco700;
+                }
+
+                hr {
+                    @apply h-px w-full bg-pink1 border-none my-2;
+                }
+
+                blockquote {
+                    @apply p-6 text-pink1 text-[34px] font-foco100 italic leading-tight;
+                }
+
+                .imgContent {
+                    @apply rounded-br-[60px] xl:rounded-br-[80px] w-[94%] h-auto overflow-hidden block;
+                }
+
+                .tabelaWrapper {
+                    @apply w-full relative overflow-x-auto mb-14 pb-4;
+                }
+
+                .legenda {
+                    @apply text-pink1 text-sm mb-8 mt-2;
+                }
+
+                .legendaTabela {
+                    @apply text-paragraph font-foco300 text-xs my-2;
+
+                    strong {
+                        @apply font-foco700;
+                    }
+                }
+
+                ul.default {
+                    @apply list-disc mt-2 ml-6 text-paragraph;
+
+                    li {
+                        @apply text-lg lg:text-[22px] text-paragraph font-foco300 leading-tight mb-4;
+
+                        strong {
+                            @apply font-foco700;
+                        }
+                    }
+                }
+            }
         }
+    }
+
+    .pinkIntersection {
+        @apply my-10 p-10 rounded-r-[80px] bg-gradient-to-b from-pink1 to-pinklight text-white w-[95%] text-xl;
+    }
+
+    .pinkIntersectionHoriz {
+        @apply my-10 p-14 rounded-r-[80px] bg-gradient-to-r from-pinklight to-pink1 text-white w-[95%] text-xl;
+    }
+
+    .transparentIntersection {
+        @apply my-10 p-8 md:p-12 rounded-r-[80px] bg-white w-[95%] drop-shadow-transpInters;
+
+        p {
+            @apply text-paragraph text-lg md:text-xl font-foco300 leading-tight mb-5;
+
+            &:last-of-type {
+                @apply mb-0;
+            }
+        }
+    }
+
+    .gri {
+        @apply font-foco300 text-xl md:text-2xl -mt-6 mb-6;
+    }
+
+    .gri2 {
+        @apply font-foco700 text-base -mt-6 mb-6;
     }
 
     footer {
@@ -410,7 +551,7 @@
             @apply mb-4;
 
             li {
-                @apply mb-0 text-[16px] lg:text-lg leading-none lg:leading-[1.18em] text-itemsrodape font-foco;
+                @apply mb-0 leading-tight text-[16px] lg:text-lg  sm:leading-none lg:leading-[1.18em] text-itemsrodape font-foco;
 
                 &:first-of-type {
                     @apply font-foco700;

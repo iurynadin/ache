@@ -28,8 +28,8 @@ module.exports = {
                 cinza2: "#E8E5E5",
                 itemsrodape: "#626161",
                 menu: "rgba(0,0,0,0.3)",
-                menusecundario: "rgba(83,83,83,0.6)"
-
+                menusecundario: "rgba(83,83,83,0.6)",
+                lilas: "#7C2482"
             },
             fontFamily: {
                 montserrat: ["Montserrat"],
@@ -47,8 +47,15 @@ module.exports = {
                 presidencia: "url('../backgrounds/presidencia.jpg')",
                 ache: "url('../backgrounds/ache.jpg')",
                 governanca: "url('../backgrounds/governanca.jpg')",
+                dialogo: "url('../backgrounds/dialogo.jpg')",
+                excelencia: "url('../backgrounds/excelencia.jpg')",
+                anexos: "url('../backgrounds/anexos.jpg')",
+
                 curvadestaque2021: "url('../images/curva-destaques2021.png')",
                 boxache: "url('../images/boxache.jpg')",
+                boxgovernanca: "url('../images/boxgovernanca.jpg')",
+                boxdialogo: "url('../images/boxdialogo.jpg')",
+                boxexcelencia: "url('../images/boxexcelencia.jpg')",
             },
             backgroundPosition: {
                 centerTop: 'center top',
@@ -57,6 +64,9 @@ module.exports = {
             },
             paddingLeft: {
                 sidebar: '1rem',
+            },
+            dropShadow: {
+                transpInters: '0 0 15px rgba(0, 0, 0, 0.25)',
             },
             backgroundSize: {
             }

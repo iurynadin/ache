@@ -5,10 +5,10 @@ class MenuGovernancaElement extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <ul>
-                <li><a href="estrutura-de-governanca.html">Estrutura de governança</a></li>
-                <li><a href="#">Compliance e gestão de riscos</a></li>
-                <li><a href="#">Inovação</a></li>
-                <li><a href="#">Desempenho setorial e do negócio</a></li>
+                <li><a href="./estrutura-de-governanca.html">Estrutura de governança</a></li>
+                <li><a href="./compliance-e-gestao-de-risco.html">Compliance e gestão de riscos</a></li>
+                <li><a href="./inovacao.html">Inovação</a></li>
+                <li><a href="./desempenho-setorial-e-do-negocio.html">Desempenho setorial e do negócio</a></li>
             </ul>
         `;
     }

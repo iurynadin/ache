@@ -3,11 +3,14 @@ class HeroElement extends HTMLElement {
         super(); 
     }
     connectedCallback() {
+
+        const titleColor = (this.getAttribute('title-color')) ? this.getAttribute('title-color') : 'text-white';
+
         this.innerHTML = `
         <div class="default__hero ${this.getAttribute('background')}">
             <div class="container">
                 <p>${this.getAttribute('description')}</p>
-                <h1>${this.getAttribute('title')}</h1>
+                <h1 class="${titleColor}">${this.getAttribute('title')}</h1>
             </div>
             <div class="default__hero--cover"></div>
         </div>
