@@ -1249,6 +1249,9 @@ header .navTop ul li a {
   }
 }
 .default__content--sidebar section {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
@@ -1798,6 +1801,10 @@ footer ul li a:hover {
 .m-0 {
   margin: 0px;
 }
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -1805,10 +1812,6 @@ footer ul li a:hover {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 .mb-10 {
   margin-bottom: 2.5rem;
@@ -1818,6 +1821,9 @@ footer ul li a:hover {
 }
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+.-mt-20 {
+  margin-top: -5rem;
 }
 .mb-7 {
   margin-bottom: 1.75rem;
@@ -1888,9 +1894,6 @@ footer ul li a:hover {
 .mt-3 {
   margin-top: 0.75rem;
 }
-.-mt-20 {
-  margin-top: -5rem;
-}
 .block {
   display: block;
 }
@@ -1954,6 +1957,9 @@ footer ul li a:hover {
 .w-full {
   width: 100%;
 }
+.w-\[95\%\] {
+  width: 95%;
+}
 .w-8 {
   width: 2rem;
 }
@@ -1995,9 +2001,6 @@ footer ul li a:hover {
 }
 .w-7 {
   width: 1.75rem;
-}
-.w-\[95\%\] {
-  width: 95%;
 }
 .min-w-\[900px\] {
   min-width: 900px;
@@ -2107,9 +2110,9 @@ footer ul li a:hover {
   --tw-border-opacity: 1;
   border-color: rgb(193 16 96 / var(--tw-border-opacity));
 }
-.border-pink-800 {
-  --tw-border-opacity: 1;
-  border-color: rgb(157 23 77 / var(--tw-border-opacity));
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .bg-pink1 {
   --tw-bg-opacity: 1;
@@ -2133,15 +2136,11 @@ footer ul li a:hover {
 .bg-menusecundario {
   background-color: rgba(83,83,83,0.6);
 }
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.bg-dialogo {
+  background-image: url('../backgrounds/dialogo.jpg');
 }
 .bg-governanca {
   background-image: url('../backgrounds/governanca.jpg');
-}
-.bg-dialogo {
-  background-image: url('../backgrounds/dialogo.jpg');
 }
 .bg-hero {
   background-image: url('../backgrounds/hero.jpg');
@@ -2197,6 +2196,9 @@ footer ul li a:hover {
 }
 .bg-center {
   background-position: center;
+}
+.bg-\[position\:right_50\%\] {
+  background-position: right 50%;
 }
 .bg-no-repeat {
   background-repeat: no-repeat;

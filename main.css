@@ -421,7 +421,7 @@
                 @apply md:w-4/12 xl:w-4/12 bg-gradient-to-l from-[#EBECEC] to-[#ffffff] flex flex-col items-end;
 
                 section {
-                    @apply md:w-[230px] lg:w-[330px] xl:w-[390px] 2xl:w-[490px] py-4 lg:pt-10 px-4;
+                    @apply md:w-[230px] lg:w-[330px] xl:w-[390px] 2xl:w-[490px] py-4 lg:pt-10 px-4 sticky top-16;
                 }
 
                 ul {
@@ -548,6 +548,10 @@
 
     .griLegenda {
         @apply text-pink1 font-foco700 text-base;
+    }
+
+    .stickySidebar{
+        @apply sticky top-16;
     }
 
     footer {
