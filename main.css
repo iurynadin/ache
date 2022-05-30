@@ -426,7 +426,7 @@
 
                 ul {
                     li {
-                        @apply mb-2 lg:mb-6 font-foco text-[20px] pb-2 md:pb-2 lg:text-[24px] xl:text-[30px] leading-tight border-b-[1px] md:border-b-0 border-pink1;
+                        @apply mb-2 font-foco text-[20px] pb-2 md:pb-2 lg:text-[22px] leading-tight border-b-[1px] md:border-b-0 border-pink1;
 
                         a {
                             @apply text-pink1 hover:text-pinklight duration-300 transition-all;
@@ -544,6 +544,10 @@
 
     .gri2 {
         @apply font-foco700 text-base -mt-6 mb-6;
+    }
+
+    .griLegenda {
+        @apply text-pink1 font-foco700 text-base;
     }
 
     footer {

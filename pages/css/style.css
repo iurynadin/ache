@@ -1305,17 +1305,7 @@ header .navTop ul li a {
 @media (min-width: 1024px) {
 
   .default__content--sidebar ul li {
-    margin-bottom: 1.5rem;
-  }
-
-  .default__content--sidebar ul li {
-    font-size: 24px;
-  }
-}
-@media (min-width: 1280px) {
-
-  .default__content--sidebar ul li {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 .default__content--sidebar ul li a {
@@ -1688,6 +1678,13 @@ header .navTop ul li a {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+.griLegenda {
+  font-family: foco-700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(193 16 96 / var(--tw-text-opacity));
+}
 footer ul {
   margin-bottom: 1rem;
 }
@@ -1809,6 +1806,10 @@ footer ul li a:hover {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -1886,6 +1887,9 @@ footer ul li a:hover {
 }
 .mt-3 {
   margin-top: 0.75rem;
+}
+.-mt-20 {
+  margin-top: -5rem;
 }
 .block {
   display: block;
@@ -1991,6 +1995,9 @@ footer ul li a:hover {
 }
 .w-7 {
   width: 1.75rem;
+}
+.w-\[95\%\] {
+  width: 95%;
 }
 .min-w-\[900px\] {
   min-width: 900px;
@@ -2100,6 +2107,10 @@ footer ul li a:hover {
   --tw-border-opacity: 1;
   border-color: rgb(193 16 96 / var(--tw-border-opacity));
 }
+.border-pink-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(157 23 77 / var(--tw-border-opacity));
+}
 .bg-pink1 {
   --tw-bg-opacity: 1;
   background-color: rgb(193 16 96 / var(--tw-bg-opacity));
@@ -2121,6 +2132,10 @@ footer ul li a:hover {
 }
 .bg-menusecundario {
   background-color: rgba(83,83,83,0.6);
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .bg-governanca {
   background-image: url('../backgrounds/governanca.jpg');
